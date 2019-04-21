@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.top-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  /* border: 1px solid red; */
+  background-color: rgb(108, 39, 133);
+  padding: 5px 50px 5px 50px;
+}
+
+.top-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid green; */
+  grid-column-start: 5;
+}
+
+.top-nav-icons {
+  max-width: 2rem;
+}
+
+.items {
+  display: grid;
+  justify-content: center;
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+#top-search-bar {
+  background-color: rgb(108, 39, 133);
+  border: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(65, 26, 78);
+}
+
+
+
+.main-container {
+  display: grid;
+  margin: 10px 248px 0px 280px;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  border: 5px solid green;
+}
