@@ -6,6 +6,7 @@ body {
   margin: 0px;
 }
 
+/* top navigation */
 .top-nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -41,11 +42,51 @@ body {
   color: rgb(65, 26, 78);
 }
 
-
-
+/* main */
 .main-container {
   display: grid;
   margin: 10px 248px 0px 280px;
-  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 0.8em;
   border: 5px solid green;
 }
+
+.main-left {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: rgb(108, 39, 133);
+  justify-content: space-around;
+  border: 3px solid red;
+}
+
+.main-left a:link {
+  color: rgb(155, 112, 174);
+  text-decoration: none;
+}
+
+.main-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 5;
+  grid-column-end: span 4;
+  background-color: rgb(225, 225, 225);
+  border: 3px solid blue;
+}
+
+.main-right a:link {
+  color: rgb(108, 39, 133);
+  text-decoration: none;
+}
+
+
+/* .main-bottom {
+  display: grid;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 8;
+  justify-content: center;
+  border: 3px solid brown;
+} */
